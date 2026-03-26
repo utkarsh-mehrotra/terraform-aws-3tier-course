@@ -1,0 +1,10 @@
+variable "prefix" { type = string }
+variable "vpc_id" { type = string }
+variable "public_subnets" { type = list(string) }
+variable "private_app_subnets" { type = list(string) }
+variable "alb_security_group_id" { type = string }
+variable "ecs_security_group_id" { type = string }
+variable "ecs_task_execution_role_arn" { type = string }
+variable "ecs_task_role_arn" { type = string }
+variable "domain_name" { type = string }
+variable "db_secret_arn" { type = string }
